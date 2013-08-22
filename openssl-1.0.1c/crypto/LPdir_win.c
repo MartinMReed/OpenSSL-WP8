@@ -36,6 +36,8 @@
     [as well as -D_UNICODE]. */
 #if defined(LP_SYS_WINCE) && !defined(FindFirstFile)
 # define FindFirstFile FindFirstFileW
+#else if _WIN32_WINNT==0x0602
+# define FindFirstFile(A,B) FindFirstFileExW(A, FindExInfoStandard, B, FindExSearchNameMatch, NULL, 0)
 #endif
 #if defined(LP_SYS_WINCE) && !defined(FindFirstFile)
 # define FindNextFile FindNextFileW
