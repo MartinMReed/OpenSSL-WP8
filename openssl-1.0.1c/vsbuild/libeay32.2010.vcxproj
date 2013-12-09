@@ -126,7 +126,7 @@
     <PreBuildEvent>
       <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
 copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
-if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
 </Command>
     </PreBuildEvent>
     <ClCompile>
@@ -157,7 +157,7 @@ if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-i
     <PreBuildEvent>
       <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
 copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
-if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
 </Command>
     </PreBuildEvent>
     <ClCompile>
@@ -185,10 +185,9 @@ if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-i
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
-copy /Y "$(ProjectDir)crypto_opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
-copy /Y "$(ProjectDir)libeay32.def" "$(ProjectDir)..\libeay32.def"
-if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
 </Command>
     </PreBuildEvent>
     <Midl>
@@ -222,7 +221,7 @@ if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)\inclu
     <PreBuildEvent>
       <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
 copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
-if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
 </Command>
     </PreBuildEvent>
     <ClCompile>
@@ -253,7 +252,7 @@ if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-i
     <PreBuildEvent>
       <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
 copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
-if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
 </Command>
     </PreBuildEvent>
     <ClCompile>
@@ -281,10 +280,9 @@ if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)drop-i
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
-copy /Y "$(ProjectDir)crypto_opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
-copy /Y "$(ProjectDir)libeay32.def" "$(ProjectDir)..\libeay32.def"
-if not exist "$(ProjectDir)..\include\openssl\e_os.h" xcopy "$(ProjectDir)\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
 </Command>
     </PreBuildEvent>
     <Midl>
