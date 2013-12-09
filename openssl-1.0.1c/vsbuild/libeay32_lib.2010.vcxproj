@@ -124,7 +124,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"</Command>
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+</Command>
     </PreBuildEvent>
     <ClCompile>
       <AdditionalOptions>/Gs0 %(AdditionalOptions)</AdditionalOptions>
@@ -153,7 +156,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"</Command>
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+</Command>
     </PreBuildEvent>
     <ClCompile>
       <AdditionalOptions>/Gs0 %(AdditionalOptions)</AdditionalOptions>
@@ -181,7 +187,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"</Command>
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+</Command>
     </PreBuildEvent>
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
@@ -212,7 +221,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"</Command>
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+</Command>
     </PreBuildEvent>
     <ClCompile>
       <AdditionalOptions>/Gs0 %(AdditionalOptions)</AdditionalOptions>
@@ -241,7 +253,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"</Command>
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+</Command>
     </PreBuildEvent>
     <ClCompile>
       <AdditionalOptions>/Gs0 %(AdditionalOptions)</AdditionalOptions>
@@ -269,7 +284,10 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <PreBuildEvent>
-      <Command>copy /Y "$(ProjectDir)buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"</Command>
+      <Command>copy /Y "$(ProjectDir)drop-ins\crypto\buildinf.h" "$(ProjectDir)..\crypto\buildinf.h"
+copy /Y "$(ProjectDir)drop-ins\crypto\opensslconf.h" "$(ProjectDir)..\crypto\opensslconf.h"
+xcopy "$(ProjectDir)drop-ins\include\*.*" "$(ProjectDir)..\include" /C /Y /S
+</Command>
     </PreBuildEvent>
     <Midl>
       <TargetEnvironment>X64</TargetEnvironment>
